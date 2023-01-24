@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/cvItem"
+            app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_foto"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/piramida"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nama"
+            android:text="Nama Keajaiban"
+            android:padding="6dp"
+            android:layout_below="@+id/cvItem"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_umur"
+            android:padding="6dp"
+            android:layout_below="@+id/tv_nama"
+            android:layout_centerHorizontal="true"
+            android:justificationMode="inter_word"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="Umur Keajaiban"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_umur"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ditemukan"
+            android:text="Ditemukannya Keajaiaban"
+            android:padding="6dp"
+            android:layout_centerHorizontal="true"
+            android:justificationMode="inter_word"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tentang"
+            android:text="Tentang Keajaiban"
+            android:padding="6dp"
+            android:justificationMode="inter_word"
+            android:layout_below="@+id/tv_ditemukan"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_lokasi"
+            android:layout_below="@+id/tv_tentang"
+            android:text="Lihat lokasi" />
+
+        </RelativeLayout>
+
+</ScrollView>
